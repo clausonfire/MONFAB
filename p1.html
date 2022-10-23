@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <script src="./js/codigo.js"></script>
+
+    <header>
+        <div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>    <img src="/2ºDAW/DWES/1_PracticaUno/img/sensores.png" height="80px"/>
+                        </td>
+                        <td>    <p>_______________________________________________________</p>
+                        </td>
+                        <td>    <h1>Monitorización de Sensores Industriales</h1><br>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>    
+    </header>
+
+    <main>
+        <div id="menuNavegacion"> 
+            <b><p>Menú</p></b>
+            <ul>
+                <li>
+                    <a href="/2ºDAW/DWEC/1_PracticaUno/p1.html"><button>p1</button></a>
+                </li>
+                <li>
+                    <a href="/2ºDAW/DWEC/1_PracticaUno/p2.html"><button>p2</button></a>
+                </li>
+                <li>
+                    <a href="/2ºDAW/DWEC/1_PracticaUno/p3.html"><button>p3</button></a>
+                </li>
+                <li>
+                    <a href="/2ºDAW/DWEC/1_PracticaUno/p4.html"><button>p4</button></a>
+                </li>
+                <li>
+                    <a href="/2ºDAW/DWES/1_PracticaUno/p5.html"><button>p5</button></a>
+                </li>
+            </ul>   
+        </div>
+    
+
+        <div>
+            <form name="formulario" method="post" action="./ws/crearElemento.php">
+                <fieldset>
+                    <legend><b>Formulario</b></legend>
+                    Nombre: <input type="text" name="nombre" value="">
+                    <br>
+                    Descripcion: <input type=text name="descripcion">
+                    <br>
+                    Num Serie: <input type=text name="numserie">
+                    <br>
+                    <legend><b>Estado Activado? </b></legend>
+                    <input type="checkbox" id="chbox" name="estado">
+                    <br> 
+
+                    <legend><b>Prioridad</b></legend>
+                    <input type="radio" id="ch" name="ch" value="Alta">
+                    <label for="ch">Alta</label>
+                    <input type="radio" id="ch" name="ch" value="Media">
+                    <label for="ch">Media</label>
+                    <input type="radio" id="ch" name="ch" value="Baja">
+                    <label for="ch">Baja</label>
+                    <br> 
+                    
+                    <input type="submit" onclick="generarTabla()" /> 
+                    <input type="reset">
+                </fieldset>
+            </form>
+
+            <img src="/2ºDAW/DWES/1_PracticaUno/img/sensores3.jpg" height="100px"/>
+        </div>
+    </main>
+
+
+    <footer>
+        <hr>
+        <a href="tel: 653815610"><button>&#128222;<b>CLICK PARA LLAMAR</b></button></a>
+    </footer>
+
+    
+</body>
+</html>

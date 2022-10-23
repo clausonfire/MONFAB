@@ -1,0 +1,17 @@
+ANTONIA;mi prima Antonia;2648531674;on;Media
+CLAUDIA;mi prima claudia;2648531674;on;Baja
+Belén;mi hermana Belén;2648531674;on;Alta
+luis;wapo;25;on;Alta
+gabri;tio weno;28;on;Baja
+gio;gio;123;on;Alta
+
+miguel;miguel;4444;on;Media
+["nena","esta es mi nena","12345","on","Alta"]
+["samantha","hudson","666","on","Alta"]
+["samantha","hudson","666","on","Alta"]
+["samantha","hudson","666","on","Alta"]
+["samantha","hudson","666","on","Alta"]
+{"nombre":"aaron","0":"aaron","1":"12132","2":"on","3":"Alta"}
+{"nombre":"aaron","descripcion":"aaron","numSerie":"12132","estado":"on","prioridad":"Alta"}
+{"nombre":"claudia","descripcion":"bernabeu","numSerie":"12345678910","estado":"on","prioridad":"Alta"}
+{"nombre":"alejandro","descripcion":"brugarolassss","numSerie":"444777666888","estado":"on","prioridad":"Media"}
