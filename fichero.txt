@@ -15,3 +15,7 @@ miguel;miguel;4444;on;Media
 {"nombre":"aaron","descripcion":"aaron","numSerie":"12132","estado":"on","prioridad":"Alta"}
 {"nombre":"claudia","descripcion":"bernabeu","numSerie":"12345678910","estado":"on","prioridad":"Alta"}
 {"nombre":"alejandro","descripcion":"brugarolassss","numSerie":"444777666888","estado":"on","prioridad":"Media"}
+{"nombre":"funciona","descripcion":"yeahhhhhhh","numSerie":"11111111111","estado":"on","prioridad":"Alta"}
+{"nombre":"alvaro","descripcion":"takaro","numSerie":"5555","estado":"on","prioridad":"Alta"}
+{"nombre":"TAKARO","descripcion":"LOBUENO","numSerie":"6666","estado":"on","prioridad":"Alta"}
+{"nombre":"TAKARO","descripcion":"LOBUENO","numSerie":"6666","estado":"on","prioridad":"Alta"}

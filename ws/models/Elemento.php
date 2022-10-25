@@ -134,7 +134,7 @@ class Elemento implements IToJson{
 
             
             
-            $archivoTxt = fopen("c:\\xampp\\htdocs\\2ºDAW\\DWEC\\1_PracticaUno\\fichero.txt", "a");
+            $archivoTxt = fopen("c:\\xampp\\htdocs\\2ºDAW\\MONFAB\\1_PracticaUno\\fichero.txt", "a");
             fwrite($archivoTxt, $arryJson. PHP_EOL);
             fclose($archivoTxt);
             
