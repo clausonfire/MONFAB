@@ -5,46 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Tabla</title>
 </head>
 
 <body onload="newTable()">
     
 
-    <header>
+    <header id="header">
 
-        <div>
-            <table>
-                <tbody>
-                    <tr>
-                        <td> <img src="/2ºDAW/DWES/1_PracticaUno/img/sensores.png" height="80px" />
-                        </td>
-                        <td>
-                            <p>_______________________________________________________</p>
-                        </td>
-                        <td>
-                            <h1>Monitorización de Sensores Industriales</h1><br>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <div id="banner">
+            <img src="./img/sensores.png" height="80px" id="fotobanner"/>
+            <h1 id="titulobanner">Monitorización de Sensores Industriales</h1>               
+        </div> 
+
+        <script type='text/javascript' src="./js/nav.js"></script>
 
     </header>
 
-    <main>
-        <div id="menuNavegacion">
-            <b>
-                <p>Menú</p>
-            </b>
-            <a href="/2ºDAW/MONFAB/1_PracticaUno/p1.html"><button>p1</button></a>
-            <a href="/2ºDAW/MONFAB/1_PracticaUno/p2.html"><button>p2</button></a>
-            <a href="/2ºDAW/MONFAB/1_PracticaUno/p3.html"><button>p3</button></a>
-            <a href="/2ºDAW/MONFAB/1_PracticaUno/p4.html"><button>p4</button></a>
-            <a href="/2ºDAW/MONFAB/1_PracticaUno/p5.html"><button>p5</button></a>
-        </div><br>
+    <main id="main">
 
-        </div id="tabla">
+
+
+        <!-- </div id="tabla"> -->
 
         <b>
             <p>Tabla Formulario</p>
@@ -74,12 +57,17 @@
 
         </table>
 
+
+        <div id="divform">
+            
+        </div>
+
+
         <div>
+            <div id="imagenPag2"><img src="/2ºDAW/DWES/1_PracticaUno/img/sensores2.jpg" /></div>
+        </div>    
 
-            <div id="imagenPag2">
-                <img src="/2ºDAW/DWES/1_PracticaUno/img/sensores2.jpg" />
 
-            </div>
     </main>
 
     <footer>
@@ -87,8 +75,9 @@
         <a href="tel: 653815610"><button>&#128222;<b>CLICK PARA LLAMAR</b></button></a>
     </footer>
 
+    <script type='text/javascript' src="./js/codigolimpio.js"></script>
 
-    <script src="./js/codigolimpio.js"></script>
+
 </body>
 
 </html>
