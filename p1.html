@@ -22,7 +22,7 @@
        
 
         <div>
-            <form name="formulario" method="post" action="./ws/crearElemento.php">
+            <form name="formulario" method="post" id="form">
                 <fieldset>
                     <legend><b>Formulario</b></legend>
                     Nombre: <input type="text" name="nombre" value="">
@@ -44,7 +44,7 @@
                     <label for="ch">Baja</label>
                     <br> 
                     
-                    <input type="submit" onclick="generarTabla()" /> 
+                    <input type="submit" id="submitbtn"/> 
                     <input type="reset">
                 </fieldset>
             </form>
@@ -59,6 +59,9 @@
         <a href="tel: 653815610"><button>&#128222;<b>CLICK PARA LLAMAR</b></button></a>
     </footer>
 
-    
+    <script type='text/javascript' src="./js/createjs.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
 </body>
 </html>

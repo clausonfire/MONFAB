@@ -1,9 +1,3 @@
-<!-- createElement2.php: 
-ste archivo recibirá todos los parámetros enviados por el formulario
-HTML y creará el elemento en la base de datos (taba elementos). Posteriormente devolverá los
-datos del elemento creado en el formato de respuesta que se especifica en el siguiente
-apartado. -->
-
 <?php
 require_once 'DataBase.php';
 
@@ -56,12 +50,19 @@ try{
         $insert = "INSERT INTO elementos(nombre, descripcion, nserie, estado, prioridad) VALUES (:nombre, :desc, :num, :est, :prio)";
         $select = "SELECT * FROM elementos WHERE id = :id";
 
-        $database->insert($insert,$nombre,$desc,$num,$est,$prio);
+        $varnew = $database->insert($insert,$nombre,$desc,$num,$est,$prio);
         $elemento = $database->idCatch($database->getPdo()->lastInsertId(),$select);//el pdo va a la bd y coge el ultimo id registrado
-        echo "Registro Añadido";
-        $arrVacio['success'] = true;
-        $arrVacio['message'] = 'registro AÑADIDO';
-        $arrVacio['data'] = $elemento;
+
+        if ($varnew !== null) {
+            $arrVacio['success'] = true;
+            $arrVacio['message'] = 'registro AÑADIDO';
+            $arrVacio['data'] = $elemento;
+        } else {
+            $arrVacio['success'] = false;
+            $arrVacio['message'] = 'Error, NO se añadió nada';
+            $arrVacio['data'] = null;
+        }
+        
 
         $arrJSON = json_encode($arrVacio, JSON_PRETTY_PRINT);
         print_r($arrJSON);

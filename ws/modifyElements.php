@@ -25,24 +25,24 @@ try{
     if (empty($num)){
         $num = 'vaxio';
     }
-    if (!empty($est) && $est='activo'){
-        $est = 'activo';
+    if (!empty($est) && $est='Activo'){
+        $est = 'Activo';
     }else{
-        $est = 'inactivo';
+        $est = 'Inactivo';
     }
 
     switch($prio){
-        case 'baja': 
-            $prio = 'baja';
+        case 'Baja': 
+            $prio = 'Baja';
             break;
-        case 'media': 
-            $prio = 'media';
+        case 'Media': 
+            $prio = 'Media';
             break;
-        case 'alta': 
-            $prio = 'alta';
+        case 'Alta': 
+            $prio = 'Alta';
             break;
         default;
-            $prio = 'media';
+            $prio = 'Media';
             break;
             
     }
@@ -57,7 +57,6 @@ try{
 
     if(!empty($elemento)){
        
-        echo "Registro Añadido";
         $arrVacio['success'] = true;
         $arrVacio['message'] = 'registro MODIFICADO';
         $arrVacio['data'] = $elemento;

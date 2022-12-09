@@ -17,7 +17,7 @@ function chargeNavBar(){
 
 function validateURL(){
 
-    switch(window.location.href){
+    switch(window.location.href){//devuelve la url completa donde estas
         case 'http://localhost/2%c2%baDAW/MONFAB/1_PracticaUno/p1.html':
             const btn1 = document.getElementById('btn1');
             btn1.style.backgroundColor="orange";

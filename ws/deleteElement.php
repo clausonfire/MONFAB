@@ -18,7 +18,6 @@ try{
 
        
         $elemento = $database->idCatch($id, $consulta);
-        echo "Registro Eliminado";
 
         $arrVacio['success'] = true;
         $arrVacio['message'] = 'registro ELIMINADO';

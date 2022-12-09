@@ -20,7 +20,7 @@ class DataBase
 
         //Domain Source Name -> Nombre de Origen de datos
         $dsn = 'mysql:host=' . $host . ';port=' . $port . ';dbname=' . $name;
-        $this->pdo = new PDO($dsn, $user, $password);
+        $this->pdo = new PDO($dsn, $user, $password); //php data object
     }
 
     public function getPdo(){
@@ -63,7 +63,7 @@ class DataBase
             $consulta2->execute();
             return $consulta2->fetchAll(PDO::FETCH_ASSOC);
         }catch(Exception $e2){
-            return $e2;
+            return null;
         }
     }
 
